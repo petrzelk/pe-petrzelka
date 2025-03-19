@@ -41,17 +41,17 @@ def p72(d=1_000_000) -> int:
   def add_phi(n:int,index_1:int):
     for index_2 in range(index_1+1):
       prime=prime_list[index_2]
-      if n*prime<=d and n*prime not in phi_counts:
-        #Are n and prime reltiveely prime?
-        if n % prime == 0:
-          phi_counts[n*prime] = prime * phi_counts[n]
-        else:
-          phi_counts[n*prime] = (prime - 1) * phi_counts[n]
-        add_phi(n*prime,index_1)
-      elif n*prime<=d:
-        pass
-      else:
+      if n*prime>d:
         break
+      elif n*prime in phi_counts:
+        pass
+      #Are n and prime reltively prime?
+      elif n % prime == 0:
+        phi_counts[n*prime] = prime * phi_counts[n]
+        add_phi(n*prime,index_1)
+      else:
+        phi_counts[n*prime] = (prime - 1) * phi_counts[n]
+        add_phi(n*prime,index_1)
   phi_counts={}
   prime_list=primes(d+1)
   for index in range(len(prime_list)):
