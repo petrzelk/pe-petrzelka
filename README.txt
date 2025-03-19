@@ -80,6 +80,7 @@ Problem 49: Prime Permutations
 RATIONAL AND IRRATIONAL
 Problem 26: Reciprocal Cycles
 Problem 71: Ordered Fractions
+Problem 72: Counting Fractions
 
 UNCATAGORIZED
 Problem 6: Sum Square Difference
