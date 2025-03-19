@@ -11,7 +11,7 @@ class rational:
   
   def __str__(self):
     return (f"{self.num}/{self.den}")
-
+  
   def __float__(self):
     return (self.num / self.den)
 

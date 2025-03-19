@@ -2,7 +2,9 @@ from rational import rational as rational
 
 
 class polynomial:
-  """A custom polynomial class"""
+  """A custom polynomial class
+  Form of p(x)=a+bx+cx**2+...
+  """
 
   def __init__(self, coeffiecients: list):
     self.coefficients = coeffiecients
@@ -137,4 +139,3 @@ class polynomial:
       result*=n
       result+=num
     return(result)
-    

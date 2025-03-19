@@ -15,9 +15,9 @@ class ring():
         return([self.values[i%self.len] for i in range(key.start,key.stop)])
       else:
         # Behavior for no start/end not implimented.
-        raise( "IndexError: no start and ending given")
+        raise Exception( "IndexError: no start and ending given")
     else:
-      raise( "IndexError: indices not supported" )
+      raise Exception( "IndexError: indices not supported" )
 
   def __setitem__(self, key, newvalue):
     self.values[key%self.len]=newvalue
