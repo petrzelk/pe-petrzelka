@@ -104,3 +104,4 @@ Problem 68: Magic 5-gon Ring
 Problem 71: Ordered Fractions
 Problem 72: Counting Fractions
 Problem 73: Counting Fractions in a Range
+Problem 74: Digit Factorial Chains

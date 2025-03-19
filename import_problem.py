@@ -60,9 +60,10 @@ to_clean = {
     '\\}':'}',
     '\\color{red}':'',
     '\\phi':'phi',
-    '\dfrac':'frac',
-    '\frac':'frac',
-    '\operatorname':''
+    '\\dfrac':'frac',
+    '\\frac':'frac',
+    '\\operatorname':'',
+    '\\to':'->'
 }
 for to_replace in to_clean:
   #print(f'cleaned {to_replace} with {to_clean[to_replace]}')

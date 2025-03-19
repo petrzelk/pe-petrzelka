@@ -390,3 +390,9 @@ def add_prime(prime_list: list[int]) -> None:
   while not is_prime(i, prime_list):
     i += 2
   prime_list.append(i)
+  
+  
+def digital_sum(n:int)->int:
+  '''Finds the sum of the digits of a number.
+  '''
+  sum(int(i for i in str(n)))
