@@ -17,6 +17,7 @@ Problem 69: Totient Maximum
 SOLUTION NEEDS REWORKED:
 Problem 61: Cyclical Figurate Numbers
 Problem 66: Diophantine Equation
+Problem 74: Digit Factorial Chains
 
 COMBINATORICS AND COUNTING
 Problem 1: Multiples of 3 or 5
@@ -104,4 +105,4 @@ Problem 68: Magic 5-gon Ring
 Problem 71: Ordered Fractions
 Problem 72: Counting Fractions
 Problem 73: Counting Fractions in a Range
-Problem 74: Digit Factorial Chains
+Problem 75: Singular Integer Right Triangles

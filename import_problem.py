@@ -63,7 +63,9 @@ to_clean = {
     '\\dfrac':'frac',
     '\\frac':'frac',
     '\\operatorname':'',
-    '\\to':'->'
+    '\\to':'->',
+    '<ul style="list-style-type:none;">':'',
+    '\\pu':''
 }
 for to_replace in to_clean:
   #print(f'cleaned {to_replace} with {to_clean[to_replace]}')
