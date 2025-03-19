@@ -79,8 +79,6 @@ Problem 49: Prime Permutations
 
 RATIONAL AND IRRATIONAL
 Problem 26: Reciprocal Cycles
-Problem 71: Ordered Fractions
-Problem 72: Counting Fractions
 
 UNCATAGORIZED
 Problem 6: Sum Square Difference
@@ -103,3 +101,6 @@ Problem 63: Powerful Digit Counts
 Problem 64: Odd Period Square Roots
 Problem 65: Convergents of e
 Problem 68: Magic 5-gon Ring
+Problem 71: Ordered Fractions
+Problem 72: Counting Fractions
+Problem 73: Counting Fractions in a Range
