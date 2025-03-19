@@ -59,7 +59,10 @@ to_clean = {
     '\\{':'{',
     '\\}':'}',
     '\\color{red}':'',
-    '\\phi':'phi'
+    '\\phi':'phi',
+    '\dfrac':'frac',
+    '\frac':'frac',
+    '\operatorname':''
 }
 for to_replace in to_clean:
   #print(f'cleaned {to_replace} with {to_clean[to_replace]}')

@@ -1,4 +1,4 @@
-The following file describes the groups of problems that I have broken the problem set up into as well as giving the names and difficulties of problems. Specific problems documentation and their solutions are viewable in the other text and python documents.
+The following file describes the groups of problems that I have broken. The problems are set up into groups as well as giving the names and difficulties of problems. Specific problems documentation and their solutions are viewable in the problems folder containing python documents.
 
 In 2019 I began my work on Project Euler while take CS:1210 at the University of Iowa under Dr. Segre, the Computer Science Department Chair. It was during this time that I began working through problems, answering them as I learned about the data structures that Python has to offer. It is partially to Euler's credit that I found great success in that class.
 
@@ -79,6 +79,7 @@ Problem 49: Prime Permutations
 
 RATIONAL AND IRRATIONAL
 Problem 26: Reciprocal Cycles
+Problem 71: Ordered Fractions
 
 UNCATAGORIZED
 Problem 6: Sum Square Difference
