@@ -396,3 +396,15 @@ def digital_sum(n:int)->int:
   '''Finds the sum of the digits of a number.
   '''
   sum(int(i for i in str(n)))
+
+def partitions(n):
+  '''Finds the partitions of n.
+  '''
+  def p(n,start):
+    if n == 1 or n == 0:
+      return(1)
+    result=1
+    for i in range(start,1,-1):
+      result += p(n-i,min(i,n-i))
+    return(result)
+  return(p(n,n))
