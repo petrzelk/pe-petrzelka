@@ -473,3 +473,9 @@ def is_ortho(v1: tuple[int,int],v2: tuple[int,int]) -> bool:
   '''Tests to see if two vectors are otrthogonal.
   '''
   return v1[0]*v2[0]+v1[1]*v2[1]==0
+
+
+def is_int(n:int|float)->bool:
+  '''Tests to see if a value is of type int or equivilant to one.
+  '''
+  return bool(isinstance(n, int) or n == int(n))

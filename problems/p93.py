@@ -43,9 +43,6 @@ sys.path.insert(0, sys.path[0][:-sys.path[0][::-1].find('\\')-1])
 from modules.project_euler_functions import *
 
 # User defined functions
-def is_int(n:int|float)->bool:
-  return bool(isinstance(n, int) or n == int(n))
-
 def a_combos(values:list[int|float])->list[int|float]:
   if len(values)==1:
     if is_int(values[0]):
