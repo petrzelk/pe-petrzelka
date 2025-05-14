@@ -18,6 +18,7 @@ SOLUTION NEEDS REWORKED:
 Problem 61: Cyclical Figurate Numbers
 Problem 66: Diophantine Equation
 Problem 74: Digit Factorial Chains
+Problem 96: Su Doku
 
 COMBINATORICS AND COUNTING
 Problem 1: Multiples of 3 or 5
@@ -106,3 +107,27 @@ Problem 71: Ordered Fractions
 Problem 72: Counting Fractions
 Problem 73: Counting Fractions in a Range
 Problem 75: Singular Integer Right Triangles
+Problem 76: Counting Summations
+Problem 77: Prime Summations
+Problem 78: Coin Partitions
+Problem 79: Passcode Derivation
+Problem 80: Square Root Digital Expansion
+Problem 81: Path Sum: Two Ways
+Problem 82: Path Sum: Three Ways
+Problem 83: Path Sum: Four Ways
+Problem 84: Monopoly Odds
+Problem 85: Counting Rectangles
+Problem 86: Cuboid Route
+Problem 87: Prime Power Triples
+Problem 88: Product-sum Numbers
+Problem 89: Roman Numerals
+Problem 90: Cube Digit Pairs
+Problem 91: Right Triangles with Integer Coordinates
+Problem 92: Square Digit Chains
+Problem 93: Arithmetic Expressions
+Problem 94: Almost Equilateral Triangles
+Problem 95: Amicable Chains
+Problem 97: Large Non-Mersenne Prime
+Problem 98: Anagramic Squares
+Problem 99: Largest Exponential
+Problem 100: Arranged Probability
