@@ -65,7 +65,9 @@ to_clean = {
     '\\operatorname':'',
     '\\to':'->',
     '<ul style="list-style-type:none;">':'',
-    '\\pu':''
+    '\\pu':'',
+    '\\cdots':'...',
+    '\\triangle':'triangle'
 }
 for to_replace in to_clean:
   #print(f'cleaned {to_replace} with {to_clean[to_replace]}')

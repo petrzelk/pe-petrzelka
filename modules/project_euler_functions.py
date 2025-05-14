@@ -395,7 +395,14 @@ def add_prime(prime_list: list[int]) -> None:
 def digital_sum(n:int)->int:
   '''Finds the sum of the digits of a number.
   '''
-  sum(int(i for i in str(n)))
+  return sum(int(i) for i in str(n))
+  
+
+def square_digital_sum(n:int)->int:
+  '''Finds the sum of the square of each digit of a number.
+  '''
+  return sum(int(i)**2 for i in str(n))
+
 
 def partitions(n):
   '''Finds the partitions of n.
@@ -407,4 +414,62 @@ def partitions(n):
     for i in range(start,1,-1):
       result += p(n-i,min(i,n-i))
     return(result)
-  return(p(n,n))
+  return p(n,n)
+
+
+def int_to_roman(n: int) -> str:
+  '''Converts an integer to a string of characters with the same value in roman numerals.
+  '''
+  numerals=[[["MMMMMMMMMM",1000],
+             ["MMMMM",5000],
+             ["M",1000]],
+            
+            [["M",1000], 
+             ["D",500], 
+             ["C",100]],
+            
+            [["C",100],
+             ["L",50],
+             ["X",10]],
+            
+            [["X",10],
+             ["V",5],
+             ["I",1]]]
+  
+  number=str(n)
+  result=""
+  index=-1
+  for place_val in number[::-1]:
+    place_val=int(place_val)
+    if index>=-3:
+      if place_val%5<=3:
+        result=numerals[index][2][0]*(place_val%5)+result
+      if place_val>=4 and place_val<=8:
+        result=numerals[index][1][0]+result
+      if place_val==9:
+        result=numerals[index][0][0]+result
+      if place_val%5==4:
+        result=numerals[index][2][0]+result
+    else:
+      result="M"*(place_val*10**(-4-index))+result
+    index-=1
+  return result
+
+
+def roman_to_int(s: str) -> int:
+  '''Convers a string of roman numerals to an integer.
+  '''
+  numerals={"M":1000,"D":500,"C":100,"L":50,"X":10,"V":5,"I":1}
+  result=numerals[s[-1]]
+  for i in range(-2,-len(s)-1,-1):
+    if numerals[s[i]] < numerals[s[i+1]]:
+      result-=numerals[s[i]]
+    else:
+      result+=numerals[s[i]]
+  return result
+
+
+def is_ortho(v1: tuple[int,int],v2: tuple[int,int]) -> bool:
+  '''Tests to see if two vectors are otrthogonal.
+  '''
+  return v1[0]*v2[0]+v1[1]*v2[1]==0
