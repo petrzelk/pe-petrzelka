@@ -37,7 +37,8 @@ def p37():
   result = []
   while len(result) < 11:
     if all(is_prime(int(str(n)[:length])) for length in range(1, len(str(n)))) and (
-       all(is_prime(int(str(n)[start:])) for start in range(len(str(n))))):
+       all(is_prime(int(str(n)[start:])) for start in range(len(str(n))))) and (
+         str(n)[0]!='1' and str(n)[-1]!='1'):
       result.append(n)
       #print(n)
     n += 2
