@@ -27,7 +27,7 @@ from modules.project_euler_functions import *
 def pNUM() -> int:
   """The solution.
   """
-  pass
+  return 0
 
 
 def pNUMalt():
