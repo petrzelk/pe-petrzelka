@@ -91,7 +91,7 @@ def p17(limit:int=1000)->int:
   """
   result=0
   for i in range(1,limit+1):
-    print(i, int_to_str(i))
+    #print(i, int_to_str(i))
     result += len(int_to_str(i).replace(' ',''))
   return result
 
