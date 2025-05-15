@@ -7,7 +7,7 @@ While Euler recommends that you do problemes that you know how to do first, I fo
 To challenge myself I like to refrain from using extended python libraries as I have found that building my tools are more rewarding. I also have created a restriction for myself that I cannot google the terms of the problem. I do, however, still sometimes need to research the mathimatical concepts that underpin these problems.
 
 SOLVED WITH SOLUTION LOST:
-Problem 69: Totient Maximum
+None
 
 SOLUTION NEEDS REWORKED:
 Problem 61: Cyclical Figurate Numbers
@@ -103,6 +103,7 @@ Problem 63: Powerful Digit Counts
 Problem 64: Odd Period Square Roots
 Problem 65: Convergents of e
 Problem 68: Magic 5-gon Ring
+Problem 69: Totient Maximum
 Problem 71: Ordered Fractions
 Problem 72: Counting Fractions
 Problem 73: Counting Fractions in a Range

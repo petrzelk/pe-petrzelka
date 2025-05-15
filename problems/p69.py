@@ -31,7 +31,8 @@ __date__ = '25 January 2024'
 
 # Notes:
 #
-# 
+# Peaks are at the product of the first n primes. What is the max product 
+# of the first n primes below 1 million.
 
 
 # Import statments
@@ -43,17 +44,29 @@ from modules.project_euler_functions import *
 
 
 # Solutions
-def p69() -> int:
+def p69(limit:int=1_000_000) -> int:
   """The solution.
   """
-  pass
+  result=2
+  result_phi=1
+  for n in range(2,limit):
+    if n/phi(n)>result/result_phi:
+      result=n
+      result_phi=phi(n)
+      print(n,n/result_phi)
+  return result
 
 
-def p69alt():
+def p69alt(limit:int=1_000_000):
   """Alternate solution.
   """
-  pass
+  prime_list=[2,3]
+  result=2
+  while result*prime_list[-1]<limit:
+    result *= prime_list[-1]
+    add_prime(prime_list)
+  return result
 
 
 # Test cases
-print(p69())
+print(p69alt())
