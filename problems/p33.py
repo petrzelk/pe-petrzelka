@@ -29,13 +29,32 @@ sys.path.insert(0, sys.path[0][:-sys.path[0][::-1].find('\\')-1])
 from modules.project_euler_functions import *
 
 # User defined functions
-
+def is_equal_fractions(num1,den1,num2,den2):
+  return num1*den2 == num2*den1
+def common_digit(number1,number2):
+  return set(str(number1)) & set(str(number2))
+def remove_character_instance(string, character):
+  for i in range(len(string)):
+    if string[i] == character:
+      return string[:i]+string[i+1:]
+  return string
+def remove_common_digit(number1,number2):
+  common = common_digit(number1,number2).pop()
+  return int(remove_character_instance(str(number1),common)),int(remove_character_instance(str(number2),common))
 
 # Solutions
 def p33():
   """The solution.
   """
-  pass
+  result=(1,1)
+  for i,j in ((i,j) for i in range(10,100) for j in range(i,100)):
+    factor=gcf(i,j)
+    if factor>1 and i%10!=0 and i%11!=0 and len(common_digit(i,j))==1:
+      k,l=remove_common_digit(i,j)
+      if is_equal_fractions(i,j,k,l):
+        result = (result[0]*i,result[1]*j)
+        #print(i,j)
+  return result[1]//gcf(result[0],result[1])
 
 
 def p33alt():
