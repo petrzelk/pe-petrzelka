@@ -26,13 +26,22 @@ sys.path.insert(0, sys.path[0][:-sys.path[0][::-1].find('\\')-1])
 from modules.project_euler_functions import *
 
 # User defined functions
+def rotate_str(string:str,degree:int)->str:
+  return string[-degree%len(string):]+string[:-degree%len(string)]
 
+def rotate_int(integer:int,degree:int)->int:
+  return int(rotate_str(str(integer),degree))
 
 # Solutions
-def p35():
+def p35(limit=1_000_000):
   """The solution.
   """
-  pass
+  result=0
+  prime_set=set(primes(limit))
+  for prime in prime_set:
+    result+= all(is_prime(rotate_int(prime,degree)) 
+           for degree in range(1,len(str(prime))))
+  return(result)
 
 
 def p35alt():

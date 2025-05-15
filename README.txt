@@ -87,6 +87,7 @@ Problem 22: Names Scores
 Problem 29: Distinct Powers
 Problem 31: Coin Sums
 Problem 33: Digit Cancelling Fractions
+Problem 35: Circular Primesw
 Problem 40: Champernowne's Constant
 Problem 48: Self Powers
 Problem 52: Permuted Multiples
