@@ -7,8 +7,6 @@ While Euler recommends that you do problemes that you know how to do first, I fo
 To challenge myself I like to refrain from using extended python libraries as I have found that building my tools are more rewarding. I also have created a restriction for myself that I cannot google the terms of the problem. I do, however, still sometimes need to research the mathimatical concepts that underpin these problems.
 
 SOLVED WITH SOLUTION LOST:
-Problem 17: Number Letter Counts
-Problem 31: Coin Sums
 Problem 33: Digit Cancelling Fractions
 Problem 35: Circular Primes
 Problem 37: Truncatable Primes
@@ -85,8 +83,10 @@ Problem 26: Reciprocal Cycles
 UNCATAGORIZED
 Problem 6: Sum Square Difference
 Problem 13: Large Sum
+Problem 17: Number Letter Counts
 Problem 22: Names Scores
 Problem 29: Distinct Powers
+Problem 31: Coin Sums
 Problem 40: Champernowne's Constant
 Problem 48: Self Powers
 Problem 52: Permuted Multiples
